@@ -132,7 +132,7 @@ func TestGetURLsFromHTMLManyURLs(t *testing.T) {
 
 func TestGetImagesFromHTMLRelative(t *testing.T) {
 	inputURL := "https://blog.boot.dev"
-	inputBody := `<html><body><img src"/logo.png" alt="Logo"></body></html>`
+	inputBody := `<html><body><img src="/logo.png" alt="Logo"></body></html>`
 
 	baseURL, err := url.Parse(inputURL)
 	if err != nil {
